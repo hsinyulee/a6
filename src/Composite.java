@@ -1,18 +1,27 @@
-public class Composite {
 
+abstract class Question{
+
+	   String description;
+	   public Question(String desc) {
+	      this.description = desc;
+	   }
+	   public void print() {
+		   String desc = null;
+		   desc="apple?";
+	      System.out.println(desc);
+	   }      
 	
+}
+
+   class Composite extends Question{
+
+	public Composite(String desc) {
+		super(desc);
+		
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
-	class Question {
-		   String description;
-		   public Question(String desc) {
-		      this.description = desc;
-		   }
-		   public void print() {
-		      System.out.println(desc);
-		   }      
-		}
+	
 }
